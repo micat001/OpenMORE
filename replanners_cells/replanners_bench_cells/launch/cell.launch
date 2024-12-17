@@ -31,8 +31,8 @@
     <arg name="load_robot_description" value="true"/>
   </include>
 
-  <include file="$(eval find(arg('demo_package')) + '/launch/moveit_rviz.launch')">
+  <!-- <include file="$(eval find(arg('demo_package')) + '/launch/moveit_rviz.launch')">
     <arg name="rviz_config" value="$(arg rviz)"/>
     <arg name="debug" value="false"/>
-  </include>
+  </include> -->
 </launch>
