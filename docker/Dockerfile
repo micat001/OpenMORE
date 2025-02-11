@@ -56,10 +56,10 @@ RUN echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 RUN echo "source $WORKDIR/devel/setup.bash" >> ~/.bashrc
 
 # Add pretty colors to bash and set background color to black
-# RUN echo 'export PS1="\[\033[01;32m\]\u@\h:\[\033[01;34m\]\w\[\033[00m\]\$ "' >> ~/.bashrc && \
-#     echo 'alias ls="ls --color=auto"' >> ~/.bashrc && \
-#     echo 'export CLICOLOR=1' >> ~/.bashrc && \
-#     echo 'export LSCOLORS=GxFxCxDxBxegedabagaced' >> ~/.bashrc && \
-#     echo 'printf "\e]11;#000000\e\\\n"' >> ~/.bashrc
+RUN echo 'export PS1="\[\033[01;32m\]\u@\h:\[\033[01;34m\]\w\[\033[00m\]\$ "' >> ~/.bashrc && \
+    echo 'alias ls="ls --color=auto"' >> ~/.bashrc && \
+    echo 'export CLICOLOR=1' >> ~/.bashrc && \
+    echo 'export LSCOLORS=GxFxCxDxBxegedabagaced' >> ~/.bashrc && \
+    echo 'printf "\e]11;#000000\e\\\n"' >> ~/.bashrc
 
 SHELL ["/bin/bash", "-c"]

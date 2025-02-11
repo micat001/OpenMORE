@@ -16,4 +16,5 @@ services:
       - ../../../src:/openmore_ws/src
       - ~/.ros/log:/root/.ros/log
     stdin_open: true
+    network: host
     tty: true
